@@ -1,0 +1,94 @@
+@import "src/utils/constants.scss";
+@import "src/utils/colors.scss";
+
+.postContainer {
+  padding: 4px 4px 4px 4px;
+  width: 100%;
+  min-height: 1.25rem;
+  display: grid;
+  grid-template-columns: 80px calc(100% - 80px);
+  justify-content: start;
+  margin-bottom: 4px;
+  border: 1px solid #e1dfdc; 
+
+  .postContentFooterContainer{
+    width: 100%;
+  }
+}
+
+.postHeaderContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 64px auto;
+  justify-content: start;
+  align-items: center;
+}
+
+.postContentContainer {
+  width: 100% !important;
+  display: grid;
+  grid-template-rows: auto auto;
+
+    .titleContainer {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: start;
+      align-items: center;
+
+      .postTitle {
+        font-size: $titleFontSize;
+      }
+    }
+
+    .postContent{
+      overflow-y: auto;
+    }
+}
+
+.postFooterContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .iconContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 8px;
+    margin: 4px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    h3{
+      padding: 0 4px 0 4px;
+      font-weight: 400;
+      font-size: 0.75rem;
+    }
+  }
+  .comment{
+    &:hover {
+      color: $commentColor;
+    }
+    
+  }
+  .rePost{
+    &:hover {
+      color: $rePostColor;
+    }
+  }
+  .liked{
+      color: $likeColor !important;
+    }
+  .like{
+    &:hover {
+      color: $likeColor;
+    }
+    
+  }
+  .share{
+    &:hover {
+      color: $shareColor;
+    }
+  }
+
+
+}

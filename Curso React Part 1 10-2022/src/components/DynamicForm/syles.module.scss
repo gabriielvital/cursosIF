@@ -1,0 +1,13 @@
+.container {
+  margin-top: 1rem;
+
+  .title {
+    justify-content: center;
+  }
+
+  .fieldsContainer {
+    margin-top: 1rem;
+    display: grid;
+    row-gap: 1rem;
+  }
+}
